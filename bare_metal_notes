@@ -1,0 +1,71 @@
+This notes will contain extra definitions and task I did to complete the bare metal tutorials
+
+2_gpio_output
+//GPIO input driver
+// from nucleo board user button  is connected to PC13: PortC pin 13
+
+// Added stm32g0xx.h header file to 2_gpio_output
+// was download from st website (HAL, functions ect)
+// it contains structure of all the registers
+
+
+/**PROJECT 1**/
+** Level: Beginner
+
+ 
+/* Peripherals
+ * Button
+ * LED
+ * uart
+ * ADC
+ 
+ ******* Description: 
+ *  When you send y through uart
+ *  Put on LED
+ *  Read adc signals from heart monitor into buffer
+ *  After buffer is filled changed key to n
+ *  Transmit signals from buffer through uart
+ *  Write a python script to read uart into a csv file
+ *  Plot the signals on a graph
+ 
+ *** Software/hardware tools
+ * STM32CubeIDE
+ * stm32-nucleo gob1re board
+ * C program
+ * Python ( script )	
+*/
+
+
+/*Findgin peripherals*/
+ADC channels: 
+Analog-to-digital converter (ADC)
+Pin assignment and description : datasheet
+
+
+
+USART:
+Enable clock access to peripheral
+set gpio pin mode to alternate function
+enable gpio (afrl ) alternate function mapping pins ( AFx )
+Usart registers: enable UE, tx, rx
+set baudrate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
